@@ -1,13 +1,13 @@
-package com.kunlez.blog_project;
+package com.kunlez.blog;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BlogProjectApplication {
+public class BlogApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BlogProjectApplication.class, args);
+		SpringApplication.run(BlogApplication.class, args);
 	}
 
 }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="google-signin-client_id" content="437051682367-br09nihgn31df1l7so73pev7p6fsq44v.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+</head>
+<body>
+<div class="container">
+    <div id="alert-infomation"></div>
+    <div class="login-register row">
+        <div class="title">
+            <h2 class="login" id="btn-content-login">Login</h2>
+            <h2 class="register" id="btn-content-register">Register</h2>
+        </div>
+        <div class="content">
+            <div class="content-login" id="content-login">
+                <div class="form-group">
+                    <input type="text" class="form-control text-input-login" id="usr" placeholder="NameUser*">
+                    <input type="password" class="form-control text-input-login" id="pwd" placeholder="PassWord*">
+                    <p id="user-validated"></p>
+                </div>
+
+                <div class="forgor">
+                    <a href="" id="forgot-pass"><p>Forgot Password?</p></a>
+                </div>
+                <div class="form-check form-remember">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="" id="check-box-remember">Remember me
+                    </label>
+                </div>
+                <div class="btn-login" id="btn-to-login">Login</div>
+                <div class="or-login-with">
+                    <h5 class="tittle">Hoặc Đăng Nhập Với</h5>
+                    <div class="group-btn-login-orther">
+                        <div id="login-facebook"  onclick="fbLogin()">
+                            <i class="fa fa-facebook"></i>
+                            <p>Đăng Nhập</p>
+                        </div>
+                        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-resgister" id="content-register">
+                <p id="text-Required-information">*Information Require </p>
+                <div class="user-name">
+                    <h4 class="tittle">UserName</h4>
+                    <input type="text" class="form-control" id="user-name" placeholder="NameUser*">
+                </div>
+                <div class="password">
+                    <h4 class="tittle">PassWord</h4>
+                    <input type="password" class="form-control" id="pass-word" placeholder="PassWord*">
+                </div>
+                <div class="first-name">
+                    <h4 class="tittle">First Name: </h4>
+                    <input type="text" class="form-control" id="first-name" placeholder="FirstName*">
+                </div>
+                <div class="first-name">
+                    <h4 class="tittle">Last Name: </h4>
+                    <input type="text" class="form-control" id="last-name" placeholder="LastName*">
+                </div>
+                <div class="btn-register" id="btn-register">Register</div>
+                <div class="or-rester-with">
+                    <h5 class="tittle">Hoặc Đăng Kí Với!!</h5>
+                    <div class="group-btn-register-orther">
+                        <a class="icon-facebook" href="#"><i class="fa fa-facebook"></i></a>
+                        <div class="g-signin2" data-onsuccess="onRegister"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/js/customAJAX.js"></script>
+<script type="text/javascript" src="/js/custom.js"></script>
+<script type="text/javascript" src="/js/loginAJAX.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</body>

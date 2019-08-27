@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+
+    <meta name="google-signin-client_id" content="437051682367-br09nihgn31df1l7so73pev7p6fsq44v.apps.googleusercontent.com">
+
+    <script src="https://apis.google.com/js/platform.js?onload=onLoadCallback" async defer></script>
+</head>
+<body>
+
+    <div id="wrapper" class="container-fluid">
+        <div id="wrapper-header" class="row">
+            <h1 style='font-family: "Notable", sans-serif;'><a href="/page/" id="index">Kunlez</a></h1>
+        </div>
+        <div id="wrapper-content-main" class="row">
+            <div class="col-lg-8 content-main">
+                <div class="container">
+                    <div class="td-block" id ="td-block">
+                        <div class="col-lg-6 td-block-span">
+                            <a href="#"><img src="https://techtalk.vn/wp-content/uploads/2019/06/8Id47lUu-324x160.png"></a>
+                            <a href="#"><h4 class="tittle">SDKMAN là gì? Tại sao lập trình viên Java nên cài</h4></a>
+                            <div class="post-date">
+                                <time class="entry-date updated td-module-date" datetime="2019-06-13T08:00:17+00:00">June 13, 2019</time>
+                            </div>
+                            <div class="content-sub">
+                                SDKMan là gì? SDKMan (Software Development Kit Manager) là một công cụ dùng để quản lý song song các phiên bản của các bộ phát...
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="col-lg-4 content-sub">
+                <a href="/page/login" class="btn btn-outline-dark" id="btn-login">Login</a>
+                <a href="#" class="btn btn-danger" id="btn-logout">Logout</a>
+                <a id="name-user" href="/page/user"></a>
+            </div>
+            <div class="pag container">
+                <ul class="pagination row" id="pagination">
+<!--                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>-->
+<!--                    <li class="page-item"><a class="page-link active-page" href="#">1</a></li>-->
+<!--                    <li class="page-item"><a class="page-link" href="#">2</a></li>-->
+<!--                    <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+<!--                    <li class="page-item"><a class="page-link" href="#">Next</a></li>-->
+                </ul>
+            </div>
+        </div>
+        <div id="wrapper-footer" class="row"></div>
+    </div>
+
+    <script type="text/javascript" src="/js/indexAJAX.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>

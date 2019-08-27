@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+    <title>create</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/grapesjs-plugin-ckeditor@0.0.9/dist/grapesjs-plugin-ckeditor.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/12.3.1/classic/ckeditor.js"></script>
+    <script src="https://cdn.ckeditor.com/4.12.1/standard/ckeditor.js"></script>
+</head>
+<body>
+<div class="container">
+    <div id="alert-infomation"></div>
+    <div id="wrapper-header" class="row">
+        <h1 style='font-family: "Notable", sans-serif;'><a href="/page/" id="index">Kunlez</a></h1>
+    </div>
+    <div id="wrapper-content" class="row">
+        <div class="row content-top">
+            <div class="tittle-user col-lg-6"><a href="/page/user"><button type="button" class="btn btn-default" id="btn-user-name">NguyenDuyKhanh</button></a></div>
+            <div class="btn-add-blog col-lg-6"><button type="button" class="btn btn-success" id="btn-add-item">Create new blog</button></div>
+        </div>
+        <div class="row content-main" id="content-main">
+
+            <table class="table table-striped container" id="list-post">
+                <thead>
+                <tr class="row">
+                    <th class="col-lg-2">Title</th>
+                    <th class="col-lg-2">Tag</th>
+                    <th class="col-lg-2">Image</th>
+                    <th class="col-lg-4">Content</th>
+                    <th class="col-lg-1"></th>
+                    <th class="col-lg-1"></th>
+                </tr>
+                </thead>
+                <tbody id="body-list-post-user">
+                </tbody>
+            </table>
+
+
+
+            <div class="upload-blog container" id="upload-blog">
+                <div class="form-group title-blog row">
+                    <label for="usr">Title:</label>
+                    <input type="text" class="form-control" id="title-blog">
+                </div>
+                <div class="form-group content-blog row">
+                    <label for="usr">Content:</label>
+                    <textarea class="form-control" rows="5" id="content-blog" name="content"></textarea>
+                </div>
+                <div class="form-group tags-blog row">
+                    <label for="usr">Tags:</label>
+                    <div class="input-group mb-3 col-lg-6">
+                        <select class="custom-select" id="option-tag">
+                            <option value="1" selected >One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <button type="button" class="btn btn-danger" id="btn-add-tag">Select</button>
+                    </div>
+                </div>
+                <div class="form-group tags-blog tags-blog-new row">
+                    <div class="input-group mb-3 col-lg-6">
+                        <input id="tag-news" type="text" class="form-control" name="tag-news" placeholder="Tag News">
+                        <button type="button" class="btn btn-danger" id="btn-add-tag-new">Select</button>
+                    </div>
+                </div>
+                <div class="form-group tags-blog tags-blog-choose row">
+                    <div class="input-group mb-3 col-lg-6">
+                        <label>Tag selected <p class="node">(double-click to delete tag)</p>: </label>
+                        <div id="list-tags-opption"></div>
+                    </div>
+                </div>
+                <div class="form-group img-blog row">
+                    <label for="usr">Link Image:</label>
+                    <input type="text" class="form-control" id="link-img">
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-success col-lg-3" id="btn-up-blog">Đăng bài viết</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper-footer" class="row"></div>
+</div>
+<script type="text/javascript" src="/js/custom.js"></script>
+<script type="text/javascript" src="/js/userAJAX.js"></script>
+<!--script edit textarea-->
+<script>
+    let editor;
+    ClassicEditor
+        .create( document.querySelector( '#content-blog' ) )
+        .then( newEditor => {
+            editor = newEditor;
+        } )
+        .catch( error => {
+            console.error( error );
+        } );
+
+</script>
+</body>
+</html>

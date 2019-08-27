@@ -1,0 +1,101 @@
+#wrapper-content-main {
+    margin: 30px;
+}
+.post-date {
+    font-size: 13px;
+    font-family: Roboto;
+    color: #aaa;
+}
+
+.content-main .tittle {
+    margin-top: 10px;
+    color:black;
+}
+
+.content-main .td-block.row {
+    margin-top: 50px;
+}
+
+.content-main img {
+    width: 100%;
+    max-height: 177px;
+}
+
+.td-block-span {
+    display: inline-block;
+    float: left;
+    margin-top: 50px;
+}
+
+.pag {
+    margin-top: 50px;
+}
+
+#wrapper-content-main .content-sub #name-user {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 28px;
+    padding-top: 0px;
+    font-weight: 700;
+    background-color: #000000;
+    color: white;
+    position: fixed;
+    right: 10px;
+    cursor: pointer;
+    border: 1px solid #d5d5d5;
+    text-decoration: none;
+    transition: 0.2s;
+}
+#wrapper-content-main .pag a {
+     background-color: black;
+     color: white;
+     border: 1px solid #d5d5d5;
+}
+.pagination .page-item {
+    cursor: pointer;
+}
+
+#wrapper-content-main .pag a.active-page {
+    background-color: white;
+    color: black;
+    border: 1px solid #d5d5d5;
+}
+#wrapper-content-main .pag a:hover {
+    background-color: white;
+    color: black;
+}
+#wrapper-content-main .pag a.active-page:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid #d5d5d5;
+}
+#wrapper-content-main .content-sub a:hover {
+    color: black;
+    background-color: white;
+}
+
+#wrapper-header {text-align: center;align-items: center;}
+
+#wrapper-header #index {
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
+}
+
+#wrapper-header #index:hover {
+    color: #999966;
+}
+
+#wrapper-content-main .content-sub #name-user:hover {
+    background: white;
+    color: black;
+}
+.content-sub #btn-login:hover {
+    background-color: black!important;
+    color: white!important;
+}
+.tags span {
+    cursor: pointer;
+}

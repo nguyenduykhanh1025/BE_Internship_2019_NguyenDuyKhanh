@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<link>
+<meta charset="UTF-8">
+<title>detail</title>
+<link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/lib/all.css">
+<link rel="stylesheet" type="text/css" href="/lib/boostrap4.css">
+<link rel="stylesheet" th:href="@{/css/style.css}"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="wrapper" class="container-fluid">
+    <div id="alert-infomation"></div>
+    <div id="wrapper-header" class="row">
+        <h1 style='font-family: "Notable", sans-serif;'><a href="/page/" id="index">Kunlez</a></h1>
+    </div>
+    <div id="wrapper-content-main" class="row">
+        <div class="col-lg-8 content-detail" id="content-detail">
+            <div class="container">
+                <h1 class="tittle row">SDKMAN là gì? Tại sao lập trình viên Java nên cài đặt SDKMAN?</h1>
+                <div class="date-post row">
+                    <time class="entry-date updated td-module-date" datetime="2019-06-13T08:00:17+00:00">June 13, 2019
+                    </time>
+                </div>
+
+                <img src="../resources/static/resources/item1.png" class="row">
+                <div class="row content-detail">SDKMan (Software Development Kit Manager) là một công cụ dùng để quản lý
+                    song song các phiên bản của các bộ phát triển phần.
+
+                    Ví dụ bạn có thể cài nhiều phiên bản Java trên máy. Khi muốn dùng version nào thì bạn chuyển sang
+                    version đó. Hay muốn cài Java thì chỉ cần chạy lệnh của SDKMan là nó tự động cài phiên bản Java
+                    stable mới nhất hoặc theo phiên bản bạn chỉ định.
+
+                    SKDMan cung cấp chuẩn giao tiếp dòng lệnh (Command Line Interface – CLI) và các api để cài đặt, xóa,
+                    chuyển đổi hiển thị danh sách SDK.
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 content-sub">
+            <a href="/page/login" class="btn btn-outline-dark" id="btn-login">Login</a>
+            <a href="#" class="btn btn-danger" id="btn-logout">Logout</a>
+            <a id="name-user" href="/page/user"></a>
+        </div>
+    </div>
+    <div id="block-comment" class="row">
+        <h4 class="title col-lg-3">COMMENT</h4>
+        <div class="comment-main col-lg-9">
+            <div class="content-main-comment" id="content-main-comment">
+                <div class="comment-item ">
+                    <div class="comment-item-header">
+                        <a href="#"><p class="name-user-comment">nguyenduykhanh1025</p></a>
+                        <p class="date-comment">
+                            <time class="entry-date updated td-module-date" datetime="2019-06-13T08:00:17+00:00">June 13, 2019
+                            </time>
+                        </p>
+                    </div>
+                    <div class="comment-item-body">
+                        <p class="content">Binh luan ne</p>
+                    </div>
+                    <div class="comment-item-footer">
+                        <i class="fa fa-thumbs-up like"></i>
+                        <a href="#"><p class="respone">Tra loi</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="form-add-comment">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Comment" name="comment" id="input-comment">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit" id="btn-comment">Comment</i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="wrapper-footer" class="row"></div>
+</div>
+
+<script type="text/javascript" src="/js/customAJAX.js"></script>
+<script type="text/javascript" src="/js/custom.js"></script>
+<script type="text/javascript" src="/js/detailAJAX.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>
